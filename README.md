@@ -25,4 +25,11 @@ alt="Ubuntu Server" width="70" height="70"/>
 <img src="https://img.shields.io/badge/Ubuntu Server -22.04.2 LTS-blue"> 
 </p>
 
+<br>
 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/11274857/227277845-476652db-29b2-4b5a-bca4-03d494b2c76d.png"
+alt="Putty" width="70" height="70"/>
+</br>
+<img src="https://img.shields.io/badge/Putty -0.78 -blue"> 
+</p>
