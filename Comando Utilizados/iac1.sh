@@ -1,21 +1,4 @@
-echo "Criando usuários do sistema...."
-
-useradd guest10 -c "Usuário convidado" -s /bin/bash -m -p $(openssl passwd -crypt Senha123)
-passwd guest10 -e
-
-useradd guest11 -c "Usuário convidado" -s /bin/bash -m -p $(openssl passwd -crypt Senha123)
-passwd guest11 -e
-
-useradd guest12 -c "Usuário convidado" -s /bin/bash -m -p $(openssl passwd -crypt Senha123)
-passwd guest12 -e
-
-useradd guest13 -c "Usuário convidado" -s /bin/bash -m -p $(openssl passwd -crypt Senha123)
-passwd guest13 -e
-
-echo "Finalizado!!"
-
-
------------------------------------------------------------------------------------------
+#!/bin/bash
 
 echo "Criando diretórios..."
 
@@ -57,19 +40,3 @@ chmod 777 /publico
 
 echo "Fim....."
 
------------------------------------------------------------------------------------------
-
-echo "Atualizando o servidor..."
-apt-get update
-apt-get upgrade -y
-apt-get install apache2 -y
-apt-get install unzip -y
-
-
-echo "Baixando e copiando os arquivos da aplicação..."
-
-cd /tmp
-wget https://github.com/denilsonbonatti/linux-site-dio/archive/refs/heads/main.zip
-unzip main.zip
-cd linux-site-dio-main
-cp -R * /var/www/html/
